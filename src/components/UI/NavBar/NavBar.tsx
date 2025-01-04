@@ -1,15 +1,13 @@
 import { FC, FormEvent, useState } from "react";
 import { Button, Col, Form, Navbar, Row } from "react-bootstrap"
 
-const API_KEY = import.meta.env.VITE_API_KEY;
+const API_KEY = "ySaqs2hMKfYioQ84BDGL7CpWSFx7OdI6";
 
 interface IPropsGift{
 
   setGift: Function
 
 }
-
-
 export const NavBar: FC<IPropsGift> = ({setGift}) => {
   
 
@@ -24,9 +22,7 @@ export const NavBar: FC<IPropsGift> = ({setGift}) => {
       
             urlGitft: el.images
             .fixed_height.url,
-            title: el.title,
-          
-          
+            title: el.title, 
 
         }));
 
